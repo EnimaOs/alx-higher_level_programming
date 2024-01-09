@@ -1,21 +1,14 @@
 #!/usr/bin/python3
-"""available attributes"""
+'''Module for task 1'''
 
 
 class MyList(list):
-    """A custom list class that inherits from the built-in list class."""
+    '''Subclass of list'''
+
     def print_sorted(self):
-        """
-        Print the list elements in sorted order.
+        '''Print a list in sorted ascending'''
+        print(sorted(self))
 
-        Prints the list in ascending order using the sorted() function.
 
-        Args:
-            None
 
-        Returns:
-            None
-        """
-        my_list = sorted(self)
-        if my_list:
-            print(my_list)
+print(sorted.__dir__())
